@@ -1,6 +1,7 @@
 import React from 'react';
 import FullBar from './components/FullBar';
 import Input from './components/Input';
+import {calculateSalaryFrom} from './utils/salary'
 
 function App() {
   return (
