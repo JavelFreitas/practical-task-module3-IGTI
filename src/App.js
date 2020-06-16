@@ -77,7 +77,7 @@ export default class App extends React.Component {
       },
       {
         value: discountINSS,
-        name: 'Disconto INSS',
+        name: 'Desconto INSS',
         currentColor: '#e67e22',
         percentage: `(${barOne}%)`
       },
@@ -89,7 +89,7 @@ export default class App extends React.Component {
       },
       {
         value: discountIRPF,
-        name: 'Disconto IRPF',
+        name: 'Desconto IRPF',
         currentColor: '#c0392b',
         percentage: `(${barTwo}%)`
       },
@@ -101,7 +101,8 @@ export default class App extends React.Component {
       }
     ]
     return (
-      <>
+      <div className={'container'}>
+        <h1 className={'center teal-text'}> Salário líquido (CLT-2020) </h1>
         <div className={'row s12'}>
           <Input salary={salary} getSalary={this.handleSalary} />
 
@@ -118,7 +119,7 @@ export default class App extends React.Component {
           }
         </div>
         <FullBar barOne={barOne} barTwo={barTwo} barThree={barThree} />
-      </>
+      </div>
     );
   }
 }
