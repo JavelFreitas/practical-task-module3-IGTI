@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
-import {calculateSalaryFrom} from '../utils/salary'
 
 export default class Input extends Component {
     
-    getSalary(salary){
-        const salaryInfo = calculateSalaryFrom(salary);
-        return salaryInfo;
+    constructor(props){
+        super(props);
+    }
+
+    handleValueInput(event){
+        const {value} = event.target;
+        this.props.getSalary(value);
     }
 
     render() {
+        const {salary} = this.props;
         return (
-            <div className="input-field col s6">
-                <input placeholder="Salary" id="first_name" type="text" className="validate"/>
-                <label htmlFor="first_name">First Name</label>
+            <div className="input-field col s12">
+                <input value={salary} onChange={(event) => this.handleValueInput(event)} placeholder="Salary" id="salary" type="text" className="validate"/>
+                <label htmlFor="salary">Salary</label>
             </div>
         )
     }

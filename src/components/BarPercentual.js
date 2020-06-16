@@ -12,7 +12,7 @@ export default class BarPercentual extends Component {
     handleValueShow(stringNumber) {
         this.setState({
             ...this.state,
-            innerNumber: stringNumber
+            innerNumber: `${stringNumber}`
         });
 
     }
@@ -28,7 +28,7 @@ export default class BarPercentual extends Component {
                     height: '4vh',
                     backgroundColor: `${currentColor}`,
                 }}
-                onMouseOver={() => { this.handleValueShow(String(currentValue)) }}
+                onMouseOver={() => { this.handleValueShow(String(currentValue)+'%') }}
                 onMouseLeave={() => { this.handleValueShow('') }}
             >
                 <h2 style={{
