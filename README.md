@@ -20,7 +20,7 @@ It also includes a bar on the lower side of the screen, passing the mouse in one
 
 ## Current surface
 
-![Aplication]()
+Click to see the [App image](https://github.com/JavelFreitas/practical-challange-module3/blob/master/public/IndexV1.png)
 
 ## Available Scripts
 
