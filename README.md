@@ -1,5 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Practical Task - module 3
+
+Practical task from IGTI's 2020 Fullstack Bootcamp.
+
+## Objective
+
+To practice React knowledge acquired during Module 3 classes.
+
+## About the project
+
+```
+The aplication calculates your net salary based on your gross salary, INSS and IRPF. 
+```
+
+The main purpose is to provide the net salary and demonstrate the amount of discount INSS and IRPF reduce in the gross salary that the user provides.
+
+It also includes a bar on the lower side of the screen, passing the mouse in one of the colors will show the percentage of the money on that color based on your gross salary.
+
+## Current surface
+
+![Aplication]()
+
 ## Available Scripts
 
 In the project directory, you can run:
